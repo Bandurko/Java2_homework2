@@ -7,7 +7,6 @@ public class task3 {
     StringBuilder s2 = new StringBuilder(s1);
     long start = System.nanoTime();
     s1 = s1.replace('a', 'A');
-    // long elapsedTimeMillis = System.currentTimeMillis() - start;
     System.out.printf("Для String операция заняла %s наносекунд \n", (System.nanoTime() - start));
     start = System.nanoTime();
     for (int i = 0; i < s2.length(); i++) {
@@ -15,7 +14,6 @@ public class task3 {
         s2.setCharAt(i, 'A');
       }
     }
-    // elapsedTimeMillis = System.currentTimeMillis() - start;
     System.out.printf("Для StringBuilder операция заняла %s наносекунд \n", (System.nanoTime() - start));
   }
     
